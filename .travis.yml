@@ -5,3 +5,10 @@ install:
   - pip install -e .
 script:
   - flake8
+deploy:
+  provider: pypi
+  user: "fahlberg"
+  password:
+    secure: "YOshoDyqTF4htsicIwWptJ+pxVmauBaDPNyhKsQZlr+zbXCUxLuBEm4XMJSob/qXZKaGysWHo2/lFQq8YXqtGrDC1XvR+6+sqCVzKYviTKzAlGwv2oLf64HZUYfZszCxjhpkpWwxR0/oq9neoyz3Nwkqp0kOhOBr5dpBMW0X5grwSa6qB4v/1IBHejNQ+14UWf8KnxLe3ZMVsUNyAclFlIDm0tamb90TLXuWNtMK0VW4qru55qbMbIh1PQullbFr7CwwwQTBcsu61kXbcxlS2EJy8CJspuRb9pAIClEOVwJoUNYL+qqNrPaGLyJWzUes9dTnXFuiKVfiee7RPmD0dPkyrzeeaeedVVdbBBrbwzNRyyTMwkpAUjH2XbH1dePVZJpk/YNQL1swmmHd14FohmrGx6fX/4fAR00z2JByUsKng+k7m67OmsrdyEWfGpVXRe7O5uaT8oi/65Hljam4vG9B0Nz5AE2kIpk6FlUBqyo51hiGG3jkseQYx2QIuBnlJVi537wQJYn5r9wYlO3P+MMyK3X+xJQV75sLFULWw81GNbHs8HMoxaKn2hbQ77DG1+ADv4HlaQc+HFX3u89aQHvn4AL8Vi1kCdpGhsMWoEgqYopqkfaoufwmrpP7xyaOq6OP9MrCnZQORHV7/PR9jQCm80tJPD4raDJgHQJBZ/U="
+  on:
+    tags: true
