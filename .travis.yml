@@ -1,14 +1,14 @@
 language: python
 python: 3.5
 install:
-- pip install flake8
-- pip install -e .
+  - pip install flake8
+  - pip install -e .
 script:
-- flake8
+  - flake8
 deploy:
   provider: pypi
   user: fahlberg
   password:
-    secure: g2mUTele7PGH6kXXMi1O+vWZxO9wwXV+ZiKE1R0KEm9ZK2hsymNfLx8le3gQ/Esg9knZj8YKUzwJdyVxrhMdYwUHOg9jOWppURNKD1eoWce+hrvoNGrdjyPS0BJOuG6KYbLZUt612EJfA+zO50e05Ou+nUolpn04S4bl6V0fGQZY3VA6mYyVcjkCcBcWEmosyx2X25ySCBssqz3lAzbYawHInn9slXTOtoyl2kO7xCaWtDcgBlj6ptJz5wfpX/4UkaYJAD4u3XmM37vw+ptwvBGu6XxtBfr1btAkeESCYJVw/+K05em5dj+4iXG5EmJW8rTEpZ1yBsbbuKg+Cryo/R3NmQNX93UoydNGDNLbCZ/Cx4aCigKm3OTGrgOnFSmGGKv3shq3DNYIbtiSZrcXdjETtiihwbROEFx5ar9YmZImOdxKISuqSbGKyfCWG2LAng8/e5+EDtdW36FAZSahgLXCiNXGPF7aWXrERog1rXz0vv5+0q2xRaI92oDQQJLmBj+J6So12LaqdfZ6of3svgtJfoXD1eIP6tcuZVh2yHmqBGC8ayhGs/M9bDsxTtifgN/f8QFLLPGkv54IxYRlq7uATHT2vOOuitRXSStsk2+kPXJnW4wxYOGD4DH64PNOsnczsWnmclJ12gcHFd+wbnlQeh0WUqF27YChOREOufE=
+    secure: "aWcM6QS8dYkLvxzuAjNMSAXojpd8Ox3CsqdNxfgJDWPhJ6JF32HhqaOh+BjunwT8OhuP5VPgc9OnFSWELeDBP1LuV/SL3g4046o90g8OLJhWV5Yvc/6qeqTY9nOCS8tWnm4dezxmBEbG8DedvKrkr+8h7AH+mgCsMNy8QVBVO0E18JizNeIA/gHOzx3HBTagS/CqgboJ0M2y8wsio8FmKoYYO3EQEXOeVkehm8+zl/yp3qYwjkOrnMd3+PowDD/QnGJ9J4rir25/8OHP+Mg6Q0qkIK4q23YuxcB9Q8mPhvLYYph05jZPx4LV3oELFl5E9vVJN5qq/17xOVjd8uTRjitzTdjCjX0Wf8ScLnLIvRJhLm510YoJn2uEkct/wi+CXMxEwrKO9JOq3Va+yzv+nbfoedigJxm0PrGhHBKHjhzRev2W8/7668EiJchubyKo/+xHdc+xChV3ikGQeD1Au8+iJGQXWumLfALTEzuBeN803ipWoOBry1Uaa6O1EmsPNYer7Es+Llsws7+0s2xOek9NOZpcnGF895mx6c4tQywC4uxPlXAxh+V1LG4Ans7VhbfU7YemIoaSnFXew8uaLEL3/yQxHFCmBgcdZxmDMHU7TOLgcIqQ1fEdnWCKW1/zIjhxqgHJXv+WbF5+b5kCgsJht4nsjZLM5cQWQNqgtTI="
   on:
     tags: true
