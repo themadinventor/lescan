@@ -1,5 +1,6 @@
 import gatt
 
+
 class AnyDeviceManager(gatt.DeviceManager):
 
     def device_discovered(self, device):
@@ -11,29 +12,29 @@ class AnyDeviceManager(gatt.DeviceManager):
         try:
             txpwr = device._properties.Get('org.bluez.Device1', 'TxPower')
             print('\ttxpwr', txpwr)
-        except Exception as e:
+        except Exception:
             pass
 
         try:
             svcdata = device._properties.Get('org.bluez.Device1',
-                    'ServiceData')
+                                             'ServiceData')
             svcdatas = ''
             for k, v in svcdata.items():
                 v = ''.join(['%02x' % b for b in v])
                 svcdatas = '%s: %s' % (k, v)
             print('\tservices', svcdatas)
-        except:
+        except Exception:
             pass
 
         try:
             mfgdata = device._properties.Get('org.bluez.Device1',
-                    'ManufacturerData')
+                                             'ManufacturerData')
             mfgdatas = ''
             for k, v in mfgdata.items():
                 v = ''.join(['%02x' % b for b in v])
                 mfgdatas = '%04x: %s' % (k, v)
             print('\tmfgdata', mfgdatas)
-        except:
+        except Exception:
             pass
 
         print()
