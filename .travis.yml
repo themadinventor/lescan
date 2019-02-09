@@ -7,6 +7,7 @@ script:
   - flake8
 deploy:
   provider: pypi
+  distributions: "sdist bdist_wheel"
   user: fahlberg
   password:
     secure: "aWcM6QS8dYkLvxzuAjNMSAXojpd8Ox3CsqdNxfgJDWPhJ6JF32HhqaOh+BjunwT8OhuP5VPgc9OnFSWELeDBP1LuV/SL3g4046o90g8OLJhWV5Yvc/6qeqTY9nOCS8tWnm4dezxmBEbG8DedvKrkr+8h7AH+mgCsMNy8QVBVO0E18JizNeIA/gHOzx3HBTagS/CqgboJ0M2y8wsio8FmKoYYO3EQEXOeVkehm8+zl/yp3qYwjkOrnMd3+PowDD/QnGJ9J4rir25/8OHP+Mg6Q0qkIK4q23YuxcB9Q8mPhvLYYph05jZPx4LV3oELFl5E9vVJN5qq/17xOVjd8uTRjitzTdjCjX0Wf8ScLnLIvRJhLm510YoJn2uEkct/wi+CXMxEwrKO9JOq3Va+yzv+nbfoedigJxm0PrGhHBKHjhzRev2W8/7668EiJchubyKo/+xHdc+xChV3ikGQeD1Au8+iJGQXWumLfALTEzuBeN803ipWoOBry1Uaa6O1EmsPNYer7Es+Llsws7+0s2xOek9NOZpcnGF895mx6c4tQywC4uxPlXAxh+V1LG4Ans7VhbfU7YemIoaSnFXew8uaLEL3/yQxHFCmBgcdZxmDMHU7TOLgcIqQ1fEdnWCKW1/zIjhxqgHJXv+WbF5+b5kCgsJht4nsjZLM5cQWQNqgtTI="
