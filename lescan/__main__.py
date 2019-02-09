@@ -41,9 +41,12 @@ class AnyDeviceManager(gatt.DeviceManager):
 
 
 def main():
-    manager = AnyDeviceManager(adapter_name='hci0')
-    manager.start_discovery()
-    manager.run()
+    try:
+        manager = AnyDeviceManager(adapter_name='hci0')
+        manager.start_discovery()
+        manager.run()
+    except KeyboardInterrupt:
+        print('Interrupted')
 
 
 if __name__ == '__main__':
